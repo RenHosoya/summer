@@ -18,7 +18,7 @@ if (isset($_SESSION['EMAIL'])) {
 <form action="login.php" method="post">
   <div>
     <label>メールアドレス:</label>
-    <input type="text" name="email" required>
+    <input type="email" name="email" required>
   </div>
   <div>
     <label>パスワード:</label>
