@@ -1,5 +1,5 @@
 <h1>投稿フォーム</h1>
-<form action="post.php" method="post">
+<form action="post_info.php" method="POST">
   <div>
     <label>タイトル：</label>
     <input type="text" name="title" required>
