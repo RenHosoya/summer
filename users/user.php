@@ -37,13 +37,16 @@ function user_validation($name, $email, $password) {
 }
 
 function user_insert($name, $email, $password) {
+
+  $name = escape($name);
+  $email = escape($email);
   $password = password_hash($password, PASSWORD_DEFAULT);
+
   $sql = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')";
   $pdo = get_db();
 
   $query = $pdo->prepare($sql);
   $query->execute();
 
-  echo "挿入完了";
   header("Location: ../index.php");
 }
