@@ -12,6 +12,6 @@
     <label>パスワード:</label>
     <input type="password" name="password" required>
   </div>
-  <input type="submit" value="新規登録" name="action">
+  <input type="submit" value="<?php print(BUTTONTEXT); ?>" name="action">
 </form>
-<p>既に登録済みの方は<a href="login_form.php">こちら</a></p>
+<p><?php print (LINKTEXT); ?><a href="<?php print (URL); ?>">こちら</a></p>

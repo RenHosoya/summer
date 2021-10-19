@@ -6,3 +6,10 @@ function get_db() {
   $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
   return $pdo;
 }
+
+function escape($str) {
+
+  $esc = addslashes($str);
+
+  return $esc;
+}
